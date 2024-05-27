@@ -2054,7 +2054,7 @@ p {
   position: relative;
   z-index: 1; }
   .footer-area::after {
-    background-color: rgba(4, 43, 15, 0.8);
+    background-color: rgba(9, 18, 49, 0.8);
     position: absolute;
     z-index: -1;
     top: 0;
