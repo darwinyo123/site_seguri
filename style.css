@@ -1876,7 +1876,7 @@ p {
         font-size: 16px;
         padding: 0 5px; } }
     .alazea-portfolio-filter .btn:hover, .alazea-portfolio-filter .btn:focus {
-      color: #70c745;
+      color: #f0a402;
       box-shadow: none; }
 
 .alazea-portfolio.row {
@@ -2855,3 +2855,56 @@ p {
 /* ======= The End ======= */
 
 /*# sourceMappingURL=style.css.map */
+
+/* ======= The End ======= */
+
+/*# sourceMappingURL=style.css.map */
+
+
+.accordion .container {
+  position: relative;
+}
+
+.accordion .label {
+  position: relative;
+  padding-top: 0;
+  font-size: 20px;
+  color: rgb(31, 30, 71);
+  cursor: pointer;
+}
+
+.accordion .label::before {
+  content: '+';
+  color: black;
+  position: absolute;
+  top: 50%;
+  right: -25px; /* Ajustado para mejor posicionamiento */
+  font-size: 30px;
+  transform: translateY(-50%);
+}
+
+.accordion .content {
+  position: relative;
+  max-height: 0;
+  text-align: justify;
+  padding-top: 1%;
+  overflow: hidden;
+  transition: max-height 0.5s ease; /* Agregado easing para transición más suave */
+}
+
+.accordion hr {
+  width: 100%;
+  margin-left: 0;
+  border: 1px solid rgba(219, 147, 12, 0.733);
+}
+
+.accordion .container.active .content {
+  max-height: 1000px; /* Suficientemente grande para acomodar el contenido */
+  padding-top: 1%; /* Asegura que el padding esté visible */
+  padding-bottom: 1%; /* Agrega padding inferior para mejor espaciado */
+}
+
+.accordion .container.active .label::before {
+  content: '-';
+  font-size: 30px;
+}
